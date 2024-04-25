@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+:root {
+  --linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+  --red-errors: hsl(0, 100%, 66%);
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+body .image-linear {
+  height: 100vh;
+  background-image: url(/images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .img1 {
+  position: absolute;
+  top: 10%;
+  right: 58%;
+  color: var(--white);
+}
+body .img1 .logo-card {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+}
+body .img1 .numberUser {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  letter-spacing: 1px;
+}
+body .img1 .nameUser {
+  position: absolute;
+  top: 80%;
+  left: 8%;
+}
+body .img1 .dateUser {
+  position: absolute;
+  top: 80%;
+  left: 85%;
+}
+body .img2 {
+  position: absolute;
+  top: 50%;
+  right: 52%;
+}
+body .img2 .cvcUser {
+  position: absolute;
+  top: 44%;
+  left: 80%;
+  color: var(--white);
+}
+body .container {
+  grid-column: span 2;
+  padding: 200px 200px 0px 400px;
+}
+body .container .form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+body .container .form .nameC {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .container .form .numberC {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .container .form .date {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+body .container .form .date label {
+  grid-column: span 2;
+}
+body .container .form .date input {
+  width: 90%;
+  padding: 5px 15px;
+}
+body .container .form .cvc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .container .form .btn {
+  grid-column: span 2;
+  background-color: var(--very-dark-violet);
+  padding: 15px 10px;
+  margin-top: 25px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: var(--white);
+}
+body .container .form label {
+  font-size: 13px;
+  font-weight: 600;
+}
+body .container .form input {
+  padding: 10px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--light-grayish-violet);
+  font-size: 15px;
+}
+body .container .form input::-moz-placeholder {
+  color: var(--light-grayish-violet);
+  font-weight: 800;
+}
+body .container .form input::placeholder {
+  color: var(--light-grayish-violet);
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  body {
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  body .image-linear {
+    height: 100vh;
+  }
+  body .image-linear img {
+    background-image: url(/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body .img1 {
+    position: absolute;
+    top: 28%;
+    right: 30%;
+    color: var(--white);
+    z-index: 999;
+  }
+  body .img1 .logo-card {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+  }
+  body .img1 .numberUser {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    letter-spacing: 1px;
+  }
+  body .img1 .nameUser {
+    position: absolute;
+    top: 80%;
+    left: 8%;
+  }
+  body .img1 .dateUser {
+    position: absolute;
+    top: 80%;
+    left: 85%;
+  }
+  body .img2 {
+    position: absolute;
+    top: 16%;
+    right: 15%;
+  }
+  body .img2 .cvcUser {
+    position: absolute;
+    top: 44%;
+    left: 80%;
+    color: var(--white);
+  }
+  body .container {
+    padding: 100px;
+  }
+  body .container .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  body .container .form .nameC {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body .container .form .numberC {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body .container .form .date {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+  body .container .form .date label {
+    grid-column: span 2;
+  }
+  body .container .form .date input {
+    width: 90%;
+    padding: 5px 15px;
+  }
+  body .container .form .cvc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body .container .form .btn {
+    grid-column: span 2;
+    background-color: var(--very-dark-violet);
+    padding: 15px 10px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+  }
+  body .container .form label {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  body .container .form input {
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--light-grayish-violet);
+    font-size: 15px;
+  }
+  body .container .form input::-moz-placeholder {
+    color: var(--light-grayish-violet);
+    font-weight: 800;
+  }
+  body .container .form input::placeholder {
+    color: var(--light-grayish-violet);
+    font-weight: 800;
+  }
+}/*# sourceMappingURL=style.css.map */
