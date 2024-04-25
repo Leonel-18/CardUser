@@ -67,7 +67,7 @@ body .img2 .cvcUser {
 }
 body .container {
   grid-column: span 2;
-  padding: 200px 200px 0px 400px;
+  padding: 200px 120px 0px 400px;
 }
 body .container .form {
   display: grid;
@@ -132,6 +132,7 @@ body .container .form input::placeholder {
   font-weight: 800;
 }
 
+/* RESPONSIVE A 768px */
 @media (max-width: 768px) {
   body {
     position: relative;
@@ -190,137 +191,7 @@ body .container .form input::placeholder {
     padding: 100px;
   }
 }
-@media (max-width: 375px) {
-  body {
-    position: relative;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  body .image-linear {
-    height: 100vh;
-    background-image: url(/images/bg-main-desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  body .img1 {
-    position: absolute;
-    top: 35%;
-    right: 15%;
-    color: var(--white);
-  }
-  body .img1 img {
-    width: 300px;
-    height: 200px;
-  }
-  body .img1 .logo-card {
-    position: absolute;
-    top: 10%;
-    left: 8%;
-  }
-  body .img1 .numberUser {
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    letter-spacing: 1px;
-    font-size: 20px;
-  }
-  body .img1 .nameUser {
-    position: absolute;
-    top: 80%;
-    left: 8%;
-    font-size: 12px;
-  }
-  body .img1 .dateUser {
-    position: absolute;
-    top: 80%;
-    left: 85%;
-    font-size: 12px;
-  }
-  body .img2 {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-  }
-  body .img2 img {
-    width: 300px;
-    height: 200px;
-  }
-  body .img2 .cvcUser {
-    position: absolute;
-    top: 43%;
-    left: 75%;
-    color: var(--white);
-  }
-  body .container {
-    padding: 100px 20px;
-  }
-  body .container .form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  body .container .form .nameC {
-    grid-column: span 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .container .form .numberC {
-    grid-column: span 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .container .form .date {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-  }
-  body .container .form .date label {
-    grid-column: span 2;
-  }
-  body .container .form .date input {
-    width: 90%;
-    padding: 5px 15px;
-  }
-  body .container .form .cvc {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .container .form .cvc input {
-    width: 100%;
-  }
-  body .container .form .btn {
-    grid-column: span 2;
-    background-color: var(--very-dark-violet);
-    padding: 15px 10px;
-    margin-top: 25px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    color: var(--white);
-  }
-  body .container .form label {
-    font-size: 13px;
-    font-weight: 600;
-  }
-  body .container .form input {
-    padding: 10px 10px;
-    border-radius: 8px;
-    border: 1px solid var(--light-grayish-violet);
-    font-size: 15px;
-  }
-  body .container .form input::-moz-placeholder {
-    color: var(--light-grayish-violet);
-    font-weight: 800;
-  }
-  body .container .form input::placeholder {
-    color: var(--light-grayish-violet);
-    font-weight: 800;
-  }
-}
+/* RESPONSIVE A 400px */
 @media (max-width: 400px) {
   body {
     position: relative;
@@ -371,6 +242,70 @@ body .container .form input::placeholder {
   body .img2 {
     position: absolute;
     top: 30%;
+    right: 5%;
+  }
+  body .img2 img {
+    width: 300px;
+    height: 200px;
+  }
+  body .img2 .cvcUser {
+    position: absolute;
+    top: 43%;
+    left: 75%;
+    color: var(--white);
+  }
+}
+/* RESPONSIVE A 375px */
+@media (max-width: 375px) {
+  body {
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  body .image-linear {
+    height: 100vh;
+    background-image: url(/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body .img1 {
+    position: absolute;
+    top: 35%;
+    right: 15%;
+    color: var(--white);
+  }
+  body .img1 img {
+    width: 300px;
+    height: 200px;
+  }
+  body .img1 .logo-card {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+  }
+  body .img1 .numberUser {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  body .img1 .nameUser {
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    font-size: 12px;
+  }
+  body .img1 .dateUser {
+    position: absolute;
+    top: 80%;
+    left: 85%;
+    font-size: 12px;
+  }
+  body .img2 {
+    position: absolute;
+    top: 20%;
     right: 5%;
   }
   body .img2 img {
