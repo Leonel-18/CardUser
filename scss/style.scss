@@ -190,7 +190,7 @@ body{
             position: absolute;
             top: 16%;
             right: 15%;
-    
+
             .cvcUser{
                 position: absolute;
                 top: 44%;
@@ -200,6 +200,77 @@ body{
         }
         .container{
             padding: 100px;
+            }
+        }
+}
+
+
+@media (max-width: 375px){
+    body{
+        position: relative;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        .image-linear{
+            height: 100vh;
+            background-image: url(/images/bg-main-desktop.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .img1{
+            position: absolute;
+            top: 35%;
+            right: 15%;
+            color: var(--white);
+            img{
+                width: 300px;
+                height: 200px;
+            }
+            .logo-card{
+                position: absolute;
+                top: 10%;
+                left: 8%;
+            }
+            .numberUser{
+                position: absolute;
+                top: 50%;
+                left: 8%;
+                letter-spacing: 1px;
+                font-size: 20px;
+            }
+            .nameUser{
+                position: absolute;
+                top: 80%;
+                left: 8%;
+                font-size: 12px;
+            }
+            .dateUser{
+                position: absolute;
+                top: 80%;
+                left: 85%;
+                font-size: 12px;
+
+            }
+        }
+    
+        .img2{
+            position: absolute;
+            top: 20%;
+            right: 5%;
+            img{
+                width: 300px;
+                height: 200px;
+            }
+            .cvcUser{
+                position: absolute;
+                top: 43%;
+                left: 75%;
+                color: var(--white);
+            }
+        }
+        .container{
+            
+            padding: 100px 20px;
             .form{
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -237,6 +308,10 @@ body{
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
+                    
+                    input{
+                        width: 100%;
+                    }
                 }
                 .btn{
                     grid-column: span 2;
