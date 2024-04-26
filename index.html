@@ -9,9 +9,7 @@
 </head>
 <body>
   <!-- BackGround Image-->
-  <div class="image-linear">
-
-  </div>
+  <div class="image-linear"></div>
 
   <!-- Card Front Image -->
   <div class="img1">
@@ -32,7 +30,7 @@
   </div>
 
   <!-- Container-->
-  <div class="container">
+  <section class="container" id="container">
       <form class="form" id="form">
         <!-- Name Card -->
 
@@ -64,9 +62,20 @@
           <input type="number" name="cvc" id="cvc" placeholder="e.g. 123" min="0" step="1" oninput="cvcLimit(event)">
         </div>
 
-        <button type="button" class="btn" id="btn">Confirm</button>
+        <button type="button" class="btn" id="btn" onclick="showFinishSection()">Confirm</button>
       </form>
+
+      
+  <div class="finish" id="finish">
+    <div class="image-complete">
+      <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+    </div>
+    <h2 class="thanks">THANK YOU!</h2>
+    <p class="desc">We've added your card details</p>
+    <button type="button" class="continue" id="continue" onclick="reload()">Continue</button>
   </div>
+  </section>
+
 
  
   <script src="js/main.js"></script>

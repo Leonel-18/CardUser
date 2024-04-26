@@ -2,6 +2,15 @@
 
  const btn = document.getElementById('btn');
 
+function showFinishSection(){
+    const form = document.getElementById('form');
+    const finish = document.getElementById('finish');
+
+    form.style.display = 'none';
+    finish.style.display = 'block';
+}
+
+
  btn.addEventListener('click', () => {
 
     
@@ -57,4 +66,9 @@ function cvcLimit(event){
     if(input.value.length > maxLength){
         input.value = input.value.slice(0, maxLength);
     }
+}
+
+
+function reload(){
+    window.reload;
 }

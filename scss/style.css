@@ -131,7 +131,32 @@ body .container .form input::placeholder {
   color: var(--light-grayish-violet);
   font-weight: 800;
 }
+body .container .finish {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  text-align: center;
+}
+body .container .finish .image-complete {
+  margin-bottom: 30px;
+}
+body .container .finish .thanks {
+  margin-bottom: 20px;
+}
+body .container .finish .desc {
+  margin-bottom: 50px;
+}
+body .container .finish .continue {
+  background-color: var(--very-dark-violet);
+  padding: 15px 35%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: var(--white);
+}
 
+/* Media Queries - Responsive Design */
 /* RESPONSIVE A 768px */
 @media (max-width: 768px) {
   body {
@@ -189,6 +214,128 @@ body .container .form input::placeholder {
   }
   body .container {
     padding: 100px;
+    margin-bottom: 10px;
+  }
+  body .container .finish {
+    display: none;
+    position: absolute;
+    top: 78%;
+    left: 35%;
+    text-align: center;
+  }
+  body .container .finish .image-complete {
+    margin-bottom: 30px;
+  }
+  body .container .finish .thanks {
+    margin-bottom: 20px;
+  }
+  body .container .finish .desc {
+    margin-bottom: 50px;
+  }
+  body .container .finish .continue {
+    background-color: var(--very-dark-violet);
+    padding: 15px 35%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+  }
+}
+/* RESPONSIVE A 460px */
+@media (max-width: 460px) {
+  body {
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  body .image-linear {
+    height: 50vh;
+    background-image: url(/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body .img1 {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    color: var(--white);
+  }
+  body .img1 img {
+    width: 300px;
+    height: 200px;
+  }
+  body .img1 .logo-card {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+  }
+  body .img1 .numberUser {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  body .img1 .nameUser {
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    font-size: 12px;
+  }
+  body .img1 .dateUser {
+    position: absolute;
+    top: 80%;
+    left: 85%;
+    font-size: 12px;
+  }
+  body .img2 {
+    position: absolute;
+    top: 18%;
+    right: 10%;
+  }
+  body .img2 img {
+    width: 300px;
+    height: 200px;
+  }
+  body .img2 .cvcUser {
+    position: absolute;
+    top: 43%;
+    left: 75%;
+    color: var(--white);
+  }
+  body .container {
+    padding: 100px 20px;
+  }
+  body .container .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+  }
+  body .container .finish {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    text-align: center;
+  }
+  body .container .finish .image-complete {
+    margin-bottom: 30px;
+  }
+  body .container .finish .thanks {
+    margin-bottom: 20px;
+  }
+  body .container .finish .desc {
+    margin-bottom: 50px;
+  }
+  body .container .finish .continue {
+    background-color: var(--very-dark-violet);
+    padding: 15px 35%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
   }
 }
 /* RESPONSIVE A 400px */
@@ -200,14 +347,14 @@ body .container .form input::placeholder {
     grid-template-columns: repeat(1, 1fr);
   }
   body .image-linear {
-    height: 100vh;
+    height: 50vh;
     background-image: url(/images/bg-main-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
   body .img1 {
     position: absolute;
-    top: 40%;
+    top: 30%;
     right: 15%;
     color: var(--white);
   }
@@ -241,7 +388,7 @@ body .container .form input::placeholder {
   }
   body .img2 {
     position: absolute;
-    top: 30%;
+    top: 15%;
     right: 5%;
   }
   body .img2 img {
@@ -254,6 +401,99 @@ body .container .form input::placeholder {
     left: 75%;
     color: var(--white);
   }
+  body .container {
+    padding: 50px 0px;
+  }
+  body .container .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+  }
+  body .container .form .nameC {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body .container .form .numberC {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body .container .form .date {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+  body .container .form .date label {
+    grid-column: span 2;
+  }
+  body .container .form .date input {
+    width: 90%;
+    padding: 5px 15px;
+  }
+  body .container .form .cvc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body .container .form .cvc input {
+    width: 100%;
+  }
+  body .container .form .btn {
+    grid-column: span 2;
+    background-color: var(--very-dark-violet);
+    padding: 15px 10px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+  }
+  body .container .form label {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  body .container .form input {
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--light-grayish-violet);
+    font-size: 15px;
+  }
+  body .container .form input::-moz-placeholder {
+    color: var(--light-grayish-violet);
+    font-weight: 800;
+  }
+  body .container .form input::placeholder {
+    color: var(--light-grayish-violet);
+    font-weight: 800;
+  }
+  body .container .form .finish {
+    display: none;
+    position: absolute;
+    top: 78%;
+    left: 30%;
+    text-align: center;
+  }
+  body .container .form .finish .image-complete {
+    margin-bottom: 30px;
+  }
+  body .container .form .finish .thanks {
+    margin-bottom: 20px;
+  }
+  body .container .form .finish .desc {
+    margin-bottom: 50px;
+  }
+  body .container .form .finish .continue {
+    background-color: var(--very-dark-violet);
+    padding: 15px 35%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+  }
 }
 /* RESPONSIVE A 375px */
 @media (max-width: 375px) {
@@ -264,7 +504,319 @@ body .container .form input::placeholder {
     grid-template-columns: repeat(1, 1fr);
   }
   body .image-linear {
-    height: 100vh;
+    height: 50vh;
+    background-image: url(/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body .img1 {
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    color: var(--white);
+  }
+  body .img1 img {
+    width: 300px;
+    height: 200px;
+  }
+  body .img1 .logo-card {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+  }
+  body .img1 .numberUser {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  body .img1 .nameUser {
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    font-size: 12px;
+  }
+  body .img1 .dateUser {
+    position: absolute;
+    top: 80%;
+    left: 85%;
+    font-size: 12px;
+  }
+  body .img2 {
+    position: absolute;
+    top: 18%;
+    right: 5%;
+  }
+  body .img2 img {
+    width: 300px;
+    height: 200px;
+  }
+  body .img2 .cvcUser {
+    position: absolute;
+    top: 43%;
+    left: 75%;
+    color: var(--white);
+  }
+  body .container {
+    padding: 100px 20px;
+  }
+  body .container .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  body .container .form .nameC {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body .container .form .numberC {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body .container .form .date {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+  body .container .form .date label {
+    grid-column: span 2;
+  }
+  body .container .form .date input {
+    width: 90%;
+    padding: 5px 15px;
+  }
+  body .container .form .cvc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body .container .form .cvc input {
+    width: 100%;
+  }
+  body .container .form .btn {
+    grid-column: span 2;
+    background-color: var(--very-dark-violet);
+    padding: 15px 10px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+  }
+  body .container .form label {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  body .container .form input {
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--light-grayish-violet);
+    font-size: 15px;
+  }
+  body .container .form input::-moz-placeholder {
+    color: var(--light-grayish-violet);
+    font-weight: 800;
+  }
+  body .container .form input::placeholder {
+    color: var(--light-grayish-violet);
+    font-weight: 800;
+  }
+  body .container .form .finish {
+    display: none;
+    position: absolute;
+    top: 78%;
+    left: 35%;
+    text-align: center;
+  }
+  body .container .form .finish .image-complete {
+    margin-bottom: 30px;
+  }
+  body .container .form .finish .thanks {
+    margin-bottom: 20px;
+  }
+  body .container .form .finish .desc {
+    margin-bottom: 50px;
+  }
+  body .container .form .finish .continue {
+    background-color: var(--very-dark-violet);
+    padding: 15px 35%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+  }
+}
+/* RESPONSIVE A 360px */
+@media (max-width: 360px) {
+  body {
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  body .image-linear {
+    height: 50vh;
+    background-image: url(/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body .img1 {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    color: var(--white);
+  }
+  body .img1 img {
+    width: 300px;
+    height: 200px;
+  }
+  body .img1 .logo-card {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+  }
+  body .img1 .numberUser {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  body .img1 .nameUser {
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    font-size: 12px;
+  }
+  body .img1 .dateUser {
+    position: absolute;
+    top: 80%;
+    left: 85%;
+    font-size: 12px;
+  }
+  body .img2 {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+  }
+  body .img2 img {
+    width: 300px;
+    height: 200px;
+  }
+  body .img2 .cvcUser {
+    position: absolute;
+    top: 43%;
+    left: 75%;
+    color: var(--white);
+  }
+  body .container {
+    padding: 100px 20px;
+  }
+  body .container .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  body .container .form .nameC {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body .container .form .numberC {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body .container .form .date {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+  body .container .form .date label {
+    grid-column: span 2;
+  }
+  body .container .form .date input {
+    width: 90%;
+    padding: 5px 15px;
+  }
+  body .container .form .cvc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body .container .form .cvc input {
+    width: 100%;
+  }
+  body .container .form .btn {
+    grid-column: span 2;
+    background-color: var(--very-dark-violet);
+    padding: 15px 10px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+  }
+  body .container .form label {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  body .container .form input {
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--light-grayish-violet);
+    font-size: 15px;
+  }
+  body .container .form input::-moz-placeholder {
+    color: var(--light-grayish-violet);
+    font-weight: 800;
+  }
+  body .container .form input::placeholder {
+    color: var(--light-grayish-violet);
+    font-weight: 800;
+  }
+  body .container .form .finish {
+    display: none;
+    position: absolute;
+    top: 78%;
+    left: 35%;
+    text-align: center;
+  }
+  body .container .form .finish .image-complete {
+    margin-bottom: 30px;
+  }
+  body .container .form .finish .thanks {
+    margin-bottom: 20px;
+  }
+  body .container .form .finish .desc {
+    margin-bottom: 50px;
+  }
+  body .container .form .finish .continue {
+    background-color: var(--very-dark-violet);
+    padding: 15px 35%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+  }
+}
+/* RESPONSIVE A 320px */
+@media (max-width: 320px) {
+  body {
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  body .image-linear {
+    height: 50vh;
     background-image: url(/images/bg-main-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -385,5 +937,29 @@ body .container .form input::placeholder {
   body .container .form input::placeholder {
     color: var(--light-grayish-violet);
     font-weight: 800;
+  }
+  body .container .form .finish {
+    display: none;
+    position: absolute;
+    top: 78%;
+    left: 35%;
+    text-align: center;
+  }
+  body .container .form .finish .image-complete {
+    margin-bottom: 30px;
+  }
+  body .container .form .finish .thanks {
+    margin-bottom: 20px;
+  }
+  body .container .form .finish .desc {
+    margin-bottom: 50px;
+  }
+  body .container .form .finish .continue {
+    background-color: var(--very-dark-violet);
+    padding: 15px 35%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
   }
 }/*# sourceMappingURL=style.css.map */
