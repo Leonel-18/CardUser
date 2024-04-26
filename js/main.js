@@ -1,15 +1,5 @@
 
-
- const btn = document.getElementById('btn');
-
-function showFinishSection(){
-    const form = document.getElementById('form');
-    const finish = document.getElementById('finish');
-
-    form.style.display = 'none';
-    finish.style.display = 'block';
-}
-
+const btn = document.getElementById('btn');
 
  btn.addEventListener('click', () => {
 
@@ -31,7 +21,40 @@ function showFinishSection(){
             }
         }
         document.getElementById('nameUser').innerHTML = nameCard;
+    
 
+        // Estas serian las validaciones en el caso que no se llenen los campos.
+        if (nameCard.trim() === '') {
+            document.getElementById('nameCardWarning').style.display = 'block';
+            return;
+        } else {
+            document.getElementById('nameCardWarning').style.display = 'none';
+        }
+        if (numCard.trim() === '') {
+            document.getElementById('numCardWarning').style.display = 'block';
+            return;
+
+        } else {
+            document.getElementById('numCardWarning').style.display = 'none';
+        }
+        if (dateOne.trim() === '' || dateTwo.trim() === '') {
+            document.getElementById('dateExpWarning').style.display = 'block';
+             return;
+        } else {
+            document.getElementById('dateExpWarning').style.display = 'none';
+        }
+    
+        if (cvc.trim() === '') {
+            document.getElementById('cvcWarning').style.display = 'block';
+            return; // Detener la ejecución si el campo está vacío
+        } else {
+            document.getElementById('cvcWarning').style.display = 'none';
+            const finish = document.getElementById('finish');
+            form.style.display = 'none';
+            finish.style.display = 'block';
+        }
+    
+       
 
 
     document.getElementById('numberUser').innerHTML = newNumberCard;
@@ -70,5 +93,5 @@ function cvcLimit(event){
 
 
 function reload(){
-    window.reload;
+    location.reload();
 }

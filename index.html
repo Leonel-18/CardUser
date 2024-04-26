@@ -31,39 +31,38 @@
 
   <!-- Container-->
   <section class="container" id="container">
-      <form class="form" id="form">
-        <!-- Name Card -->
+    <form class="form" id="form">
+      <!-- Name Card -->
+      <div class="nameC">
+        <label for="card-name">CARDHOLDER NAME</label>
+        <input type="text" name="card-name" id="card-name" placeholder="e.g. Jane Appleseed" >
+        <div id="nameCardWarning" class="warning">Can't be blank</div>
+      </div>
+      
+      <!-- Number Card -->
+      <div class="numberC">
+        <label for="card-number">CARD NUMBER</label>
+        <input type="number" name="card-number" id="card-number" placeholder="e.g. 1234 5678 9123 0000" min="0" step="1" oninput="limitNumbers(event)">
+        <div id="numCardWarning" class="warning">Can't be blank</div>
+      </div>
 
-        <div class="nameC">
-          <label for="card-name">CARDHOLDER NAME</label>
-          <input type="text" name="card-name" id="card-name" placeholder="e.g. Jane Appleseed" required>
-        </div>
-        
-        <!-- Number Card -->
+      <!-- Date Card -->
+      <div class="date">
+          <label for="date-exp">EXP. DATE (MM/YY)</label>
+          <input type="number" name="date-exp" id="date-exp1" placeholder="MM" min="0" step="1" oninput="limitDates(event)">
+          <input type="number" name="date-exp" id="date-exp2" placeholder="YY" min="0" step="1" oninput="limitDates(event)">
+          <div id="dateExpWarning" class="warning">Can't be blank</div>
+      </div>
 
-        <div class="numberC">
-          <label for="card-number">CARD NUMBER</label>
-          <input type="number" name="card-number" id="card-number" placeholder="e.g. 1234 5678 9123 0000" min="0" step="1" oninput="limitNumbers(event)">
-        </div>
-  
-        
-        <!-- Date Card -->
+      <!-- CVC Card -->
+      <div class="cvc">
+        <label for="cvc">CVC</label>
+        <input type="number" name="cvc" id="cvc" placeholder="e.g. 123" min="0" step="1" oninput="cvcLimit(event)">
+        <div id="cvcWarning" class="warning">Can't be blank</div>
+      </div>
 
-        <div class="date">
-            <label for="date-exp">EXP. DATE (MM/YY)</label>
-            <input type="number" name="date-exp" id="date-exp1" placeholder="MM" min="0" step="1" oninput="limitDates(event)">
-            <input type="number" name="date-exp" id="date-exp2" placeholder="YY" min="0" step="1" oninput="limitDates(event)">
-        </div>
-
-        <!-- CVC Card -->
-
-        <div class="cvc">
-          <label for="cvc">CVC</label>
-          <input type="number" name="cvc" id="cvc" placeholder="e.g. 123" min="0" step="1" oninput="cvcLimit(event)">
-        </div>
-
-        <button type="button" class="btn" id="btn" onclick="showFinishSection()">Confirm</button>
-      </form>
+      <button type="button" class="btn" id="btn" onclick="showFinishSection()">Confirm</button>
+    </form>
 
       
   <div class="finish" id="finish">

@@ -74,6 +74,10 @@ body .container .form {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+body .container .form .warning {
+  display: none;
+  color: var(--red-errors);
+}
 body .container .form .nameC {
   grid-column: span 2;
   display: flex;
