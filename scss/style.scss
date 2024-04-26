@@ -187,7 +187,7 @@ body{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         .image-linear{
-            height: 100vh;
+            height: 50vh;
             img{
                 background-image: url(/images/bg-main-desktop.png);
                 background-repeat: no-repeat;
@@ -239,32 +239,13 @@ body{
         }
         .container{
             padding: 100px;
-            margin-bottom: 10px;
 
             .finish{
                 display: none;
                 position: absolute;
-                top: 78%;
+                top: 60%;
                 left: 35%;
                 text-align: center;
-        
-                .image-complete{
-                    margin-bottom: 30px;
-                }
-                .thanks{
-                    margin-bottom: 20px;
-                }
-                .desc{
-                    margin-bottom: 50px;
-                }
-                .continue{
-                    background-color: var(--very-dark-violet);
-                    padding: 15px 35%;
-                    border-radius: 10px;
-                    border: none;
-                    cursor: pointer;
-                    color: var(--white);
-                }
             }
             }
 
@@ -356,23 +337,7 @@ body{
                 left: 25%;
                 text-align: center;
         
-                .image-complete{
-                    margin-bottom: 30px;
-                }
-                .thanks{
-                    margin-bottom: 20px;
-                }
-                .desc{
-                    margin-bottom: 50px;
-                }
-                .continue{
-                    background-color: var(--very-dark-violet);
-                    padding: 15px 35%;
-                    border-radius: 10px;
-                    border: none;
-                    cursor: pointer;
-                    color: var(--white);
-                }
+                
             }
 
 
@@ -447,101 +412,20 @@ body{
 
         .container{
             
-            padding: 50px 0px;
+            padding: 50px 10px;
             .form{
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
                 width: 100%;
-    
-                .nameC{
-                    grid-column: span 2;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                }
-    
-                .numberC{
-                    grid-column: span 2;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                }
-                .date{
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    justify-content: center;
-                    label{
-                        grid-column: span 2;
-                    }
-    
-                    input{
-                        width: 90%;
-                        padding: 5px 15px;
-    
-                    }
-                }
-    
-                .cvc{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    
-                    input{
-                        width: 100%;
-                    }
-                }
-                .btn{
-                    grid-column: span 2;
-                    background-color: var(--very-dark-violet);
-                    padding: 15px 10px;
-                    margin-top: 25px;
-                    border-radius: 10px;
-                    border: none;
-                    cursor: pointer;
-                    color: var(--white);
-                }
-                label{
-                    font-size: 13px;
-                    font-weight: 600;
-                }
-    
-                input{
-                    padding: 10px 10px;
-                    border-radius: 8px;
-                    border: 1px solid var(--light-grayish-violet);
-                    font-size: 15px;
-    
-                    &::placeholder{
-                        color: var(--light-grayish-violet);
-                        font-weight: 800;
-                    }
-                }
-                .finish{
-                    display: none;
-                    position: absolute;
-                    top: 78%;
-                    left: 30%;
-                    text-align: center;
-            
-                    .image-complete{
-                        margin-bottom: 30px;
-                    }
-                    .thanks{
-                        margin-bottom: 20px;
-                    }
-                    .desc{
-                        margin-bottom: 50px;
-                    }
-                    .continue{
-                        background-color: var(--very-dark-violet);
-                        padding: 15px 35%;
-                        border-radius: 10px;
-                        border: none;
-                        cursor: pointer;
-                        color: var(--white);
-                    }
-                }
+            }
+            .finish{
+                display: none;
+                position: absolute;
+                top: 60%;
+                left: 20%;
+                text-align: center;
+        
             }
         }
     }
@@ -619,96 +503,15 @@ body{
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
-    
-                .nameC{
-                    grid-column: span 2;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                }
-    
-                .numberC{
-                    grid-column: span 2;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                }
-                .date{
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    justify-content: center;
-                    label{
-                        grid-column: span 2;
-                    }
-    
-                    input{
-                        width: 90%;
-                        padding: 5px 15px;
-    
-                    }
-                }
-    
-                .cvc{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    
-                    input{
-                        width: 100%;
-                    }
-                }
-                .btn{
-                    grid-column: span 2;
-                    background-color: var(--very-dark-violet);
-                    padding: 15px 10px;
-                    margin-top: 25px;
-                    border-radius: 10px;
-                    border: none;
-                    cursor: pointer;
-                    color: var(--white);
-                }
-                label{
-                    font-size: 13px;
-                    font-weight: 600;
-                }
-    
-                input{
-                    padding: 10px 10px;
-                    border-radius: 8px;
-                    border: 1px solid var(--light-grayish-violet);
-                    font-size: 15px;
-    
-                    &::placeholder{
-                        color: var(--light-grayish-violet);
-                        font-weight: 800;
-                    }
-                }
-
-                .finish{
-                    display: none;
-                    position: absolute;
-                    top: 78%;
-                    left: 35%;
-                    text-align: center;
+            }
             
-                    .image-complete{
-                        margin-bottom: 30px;
-                    }
-                    .thanks{
-                        margin-bottom: 20px;
-                    }
-                    .desc{
-                        margin-bottom: 50px;
-                    }
-                    .continue{
-                        background-color: var(--very-dark-violet);
-                        padding: 15px 35%;
-                        border-radius: 10px;
-                        border: none;
-                        cursor: pointer;
-                        color: var(--white);
-                    }
-                }
+            .finish{
+                display: none;
+                position: absolute;
+                top: 60%;
+                left: 20%;
+                text-align: center;
+
             }
         }
     }
@@ -786,94 +589,12 @@ body{
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
     
-                .nameC{
-                    grid-column: span 2;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                }
-    
-                .numberC{
-                    grid-column: span 2;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                }
-                .date{
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    justify-content: center;
-                    label{
-                        grid-column: span 2;
-                    }
-    
-                    input{
-                        width: 90%;
-                        padding: 5px 15px;
-    
-                    }
-                }
-    
-                .cvc{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    
-                    input{
-                        width: 100%;
-                    }
-                }
-                .btn{
-                    grid-column: span 2;
-                    background-color: var(--very-dark-violet);
-                    padding: 15px 10px;
-                    margin-top: 25px;
-                    border-radius: 10px;
-                    border: none;
-                    cursor: pointer;
-                    color: var(--white);
-                }
-                label{
-                    font-size: 13px;
-                    font-weight: 600;
-                }
-    
-                input{
-                    padding: 10px 10px;
-                    border-radius: 8px;
-                    border: 1px solid var(--light-grayish-violet);
-                    font-size: 15px;
-    
-                    &::placeholder{
-                        color: var(--light-grayish-violet);
-                        font-weight: 800;
-                    }
-                }
-
                 .finish{
                     display: none;
                     position: absolute;
                     top: 78%;
                     left: 35%;
                     text-align: center;
-            
-                    .image-complete{
-                        margin-bottom: 30px;
-                    }
-                    .thanks{
-                        margin-bottom: 20px;
-                    }
-                    .desc{
-                        margin-bottom: 50px;
-                    }
-                    .continue{
-                        background-color: var(--very-dark-violet);
-                        padding: 15px 35%;
-                        border-radius: 10px;
-                        border: none;
-                        cursor: pointer;
-                        color: var(--white);
-                    }
                 }
             }
         }
@@ -952,70 +673,6 @@ body{
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
-    
-                .nameC{
-                    grid-column: span 2;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                }
-    
-                .numberC{
-                    grid-column: span 2;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                }
-                .date{
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    justify-content: center;
-                    label{
-                        grid-column: span 2;
-                    }
-    
-                    input{
-                        width: 90%;
-                        padding: 5px 15px;
-    
-                    }
-                }
-    
-                .cvc{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    
-                    input{
-                        width: 100%;
-                    }
-                }
-                .btn{
-                    grid-column: span 2;
-                    background-color: var(--very-dark-violet);
-                    padding: 15px 10px;
-                    margin-top: 25px;
-                    border-radius: 10px;
-                    border: none;
-                    cursor: pointer;
-                    color: var(--white);
-                }
-                label{
-                    font-size: 13px;
-                    font-weight: 600;
-                }
-    
-                input{
-                    padding: 10px 10px;
-                    border-radius: 8px;
-                    border: 1px solid var(--light-grayish-violet);
-                    font-size: 15px;
-    
-                    &::placeholder{
-                        color: var(--light-grayish-violet);
-                        font-weight: 800;
-                    }
-                }
 
                 .finish{
                     display: none;
@@ -1023,24 +680,6 @@ body{
                     top: 78%;
                     left: 35%;
                     text-align: center;
-            
-                    .image-complete{
-                        margin-bottom: 30px;
-                    }
-                    .thanks{
-                        margin-bottom: 20px;
-                    }
-                    .desc{
-                        margin-bottom: 50px;
-                    }
-                    .continue{
-                        background-color: var(--very-dark-violet);
-                        padding: 15px 35%;
-                        border-radius: 10px;
-                        border: none;
-                        cursor: pointer;
-                        color: var(--white);
-                    }
                 }
             }
         }

@@ -166,7 +166,7 @@ body .container .finish .continue {
     grid-template-columns: repeat(1, 1fr);
   }
   body .image-linear {
-    height: 100vh;
+    height: 50vh;
   }
   body .image-linear img {
     background-image: url(/images/bg-main-desktop.png);
@@ -214,31 +214,13 @@ body .container .finish .continue {
   }
   body .container {
     padding: 100px;
-    margin-bottom: 10px;
   }
   body .container .finish {
     display: none;
     position: absolute;
-    top: 78%;
+    top: 60%;
     left: 35%;
     text-align: center;
-  }
-  body .container .finish .image-complete {
-    margin-bottom: 30px;
-  }
-  body .container .finish .thanks {
-    margin-bottom: 20px;
-  }
-  body .container .finish .desc {
-    margin-bottom: 50px;
-  }
-  body .container .finish .continue {
-    background-color: var(--very-dark-violet);
-    padding: 15px 35%;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    color: var(--white);
   }
 }
 /* RESPONSIVE A 460px */
@@ -320,23 +302,6 @@ body .container .finish .continue {
     left: 25%;
     text-align: center;
   }
-  body .container .finish .image-complete {
-    margin-bottom: 30px;
-  }
-  body .container .finish .thanks {
-    margin-bottom: 20px;
-  }
-  body .container .finish .desc {
-    margin-bottom: 50px;
-  }
-  body .container .finish .continue {
-    background-color: var(--very-dark-violet);
-    padding: 15px 35%;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    color: var(--white);
-  }
 }
 /* RESPONSIVE A 400px */
 @media (max-width: 400px) {
@@ -402,7 +367,7 @@ body .container .finish .continue {
     color: var(--white);
   }
   body .container {
-    padding: 50px 0px;
+    padding: 50px 10px;
   }
   body .container .form {
     display: grid;
@@ -410,89 +375,12 @@ body .container .finish .continue {
     gap: 20px;
     width: 100%;
   }
-  body .container .form .nameC {
-    grid-column: span 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .container .form .numberC {
-    grid-column: span 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .container .form .date {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-  }
-  body .container .form .date label {
-    grid-column: span 2;
-  }
-  body .container .form .date input {
-    width: 90%;
-    padding: 5px 15px;
-  }
-  body .container .form .cvc {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .container .form .cvc input {
-    width: 100%;
-  }
-  body .container .form .btn {
-    grid-column: span 2;
-    background-color: var(--very-dark-violet);
-    padding: 15px 10px;
-    margin-top: 25px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    color: var(--white);
-  }
-  body .container .form label {
-    font-size: 13px;
-    font-weight: 600;
-  }
-  body .container .form input {
-    padding: 10px 10px;
-    border-radius: 8px;
-    border: 1px solid var(--light-grayish-violet);
-    font-size: 15px;
-  }
-  body .container .form input::-moz-placeholder {
-    color: var(--light-grayish-violet);
-    font-weight: 800;
-  }
-  body .container .form input::placeholder {
-    color: var(--light-grayish-violet);
-    font-weight: 800;
-  }
-  body .container .form .finish {
+  body .container .finish {
     display: none;
     position: absolute;
-    top: 78%;
-    left: 30%;
+    top: 60%;
+    left: 20%;
     text-align: center;
-  }
-  body .container .form .finish .image-complete {
-    margin-bottom: 30px;
-  }
-  body .container .form .finish .thanks {
-    margin-bottom: 20px;
-  }
-  body .container .form .finish .desc {
-    margin-bottom: 50px;
-  }
-  body .container .form .finish .continue {
-    background-color: var(--very-dark-violet);
-    padding: 15px 35%;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    color: var(--white);
   }
 }
 /* RESPONSIVE A 375px */
@@ -566,89 +454,12 @@ body .container .finish .continue {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  body .container .form .nameC {
-    grid-column: span 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .container .form .numberC {
-    grid-column: span 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .container .form .date {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-  }
-  body .container .form .date label {
-    grid-column: span 2;
-  }
-  body .container .form .date input {
-    width: 90%;
-    padding: 5px 15px;
-  }
-  body .container .form .cvc {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .container .form .cvc input {
-    width: 100%;
-  }
-  body .container .form .btn {
-    grid-column: span 2;
-    background-color: var(--very-dark-violet);
-    padding: 15px 10px;
-    margin-top: 25px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    color: var(--white);
-  }
-  body .container .form label {
-    font-size: 13px;
-    font-weight: 600;
-  }
-  body .container .form input {
-    padding: 10px 10px;
-    border-radius: 8px;
-    border: 1px solid var(--light-grayish-violet);
-    font-size: 15px;
-  }
-  body .container .form input::-moz-placeholder {
-    color: var(--light-grayish-violet);
-    font-weight: 800;
-  }
-  body .container .form input::placeholder {
-    color: var(--light-grayish-violet);
-    font-weight: 800;
-  }
-  body .container .form .finish {
+  body .container .finish {
     display: none;
     position: absolute;
-    top: 78%;
-    left: 35%;
+    top: 60%;
+    left: 20%;
     text-align: center;
-  }
-  body .container .form .finish .image-complete {
-    margin-bottom: 30px;
-  }
-  body .container .form .finish .thanks {
-    margin-bottom: 20px;
-  }
-  body .container .form .finish .desc {
-    margin-bottom: 50px;
-  }
-  body .container .form .finish .continue {
-    background-color: var(--very-dark-violet);
-    padding: 15px 35%;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    color: var(--white);
   }
 }
 /* RESPONSIVE A 360px */
@@ -722,89 +533,12 @@ body .container .finish .continue {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  body .container .form .nameC {
-    grid-column: span 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .container .form .numberC {
-    grid-column: span 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .container .form .date {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-  }
-  body .container .form .date label {
-    grid-column: span 2;
-  }
-  body .container .form .date input {
-    width: 90%;
-    padding: 5px 15px;
-  }
-  body .container .form .cvc {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .container .form .cvc input {
-    width: 100%;
-  }
-  body .container .form .btn {
-    grid-column: span 2;
-    background-color: var(--very-dark-violet);
-    padding: 15px 10px;
-    margin-top: 25px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    color: var(--white);
-  }
-  body .container .form label {
-    font-size: 13px;
-    font-weight: 600;
-  }
-  body .container .form input {
-    padding: 10px 10px;
-    border-radius: 8px;
-    border: 1px solid var(--light-grayish-violet);
-    font-size: 15px;
-  }
-  body .container .form input::-moz-placeholder {
-    color: var(--light-grayish-violet);
-    font-weight: 800;
-  }
-  body .container .form input::placeholder {
-    color: var(--light-grayish-violet);
-    font-weight: 800;
-  }
   body .container .form .finish {
     display: none;
     position: absolute;
     top: 78%;
     left: 35%;
     text-align: center;
-  }
-  body .container .form .finish .image-complete {
-    margin-bottom: 30px;
-  }
-  body .container .form .finish .thanks {
-    margin-bottom: 20px;
-  }
-  body .container .form .finish .desc {
-    margin-bottom: 50px;
-  }
-  body .container .form .finish .continue {
-    background-color: var(--very-dark-violet);
-    padding: 15px 35%;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    color: var(--white);
   }
 }
 /* RESPONSIVE A 320px */
@@ -878,88 +612,11 @@ body .container .finish .continue {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  body .container .form .nameC {
-    grid-column: span 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .container .form .numberC {
-    grid-column: span 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .container .form .date {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-  }
-  body .container .form .date label {
-    grid-column: span 2;
-  }
-  body .container .form .date input {
-    width: 90%;
-    padding: 5px 15px;
-  }
-  body .container .form .cvc {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  body .container .form .cvc input {
-    width: 100%;
-  }
-  body .container .form .btn {
-    grid-column: span 2;
-    background-color: var(--very-dark-violet);
-    padding: 15px 10px;
-    margin-top: 25px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    color: var(--white);
-  }
-  body .container .form label {
-    font-size: 13px;
-    font-weight: 600;
-  }
-  body .container .form input {
-    padding: 10px 10px;
-    border-radius: 8px;
-    border: 1px solid var(--light-grayish-violet);
-    font-size: 15px;
-  }
-  body .container .form input::-moz-placeholder {
-    color: var(--light-grayish-violet);
-    font-weight: 800;
-  }
-  body .container .form input::placeholder {
-    color: var(--light-grayish-violet);
-    font-weight: 800;
-  }
   body .container .form .finish {
     display: none;
     position: absolute;
     top: 78%;
     left: 35%;
     text-align: center;
-  }
-  body .container .form .finish .image-complete {
-    margin-bottom: 30px;
-  }
-  body .container .form .finish .thanks {
-    margin-bottom: 20px;
-  }
-  body .container .form .finish .desc {
-    margin-bottom: 50px;
-  }
-  body .container .form .finish .continue {
-    background-color: var(--very-dark-violet);
-    padding: 15px 35%;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    color: var(--white);
   }
 }/*# sourceMappingURL=style.css.map */
